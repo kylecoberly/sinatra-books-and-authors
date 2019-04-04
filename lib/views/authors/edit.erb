@@ -1,0 +1,13 @@
+<form action="/authors/<%= @author.id %>" method="POST">
+  <label for="name">Name</label>
+  <input type="text" name="name" id="name" value="<%= @author.name %>" />
+
+  <input type="submit" value="Add" />
+
+  <input type="hidden" name="_method" value="PUT" />
+</form>
+
+<form action="/authors/<%= @author.id %>" method="POST">
+  <input type="submit" value="Delete this author" />
+  <input type="hidden" name="_method" value="DELETE" />
+</form>
